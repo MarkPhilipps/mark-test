@@ -1,0 +1,15 @@
+C:\Repos\mark-test\sha1-decrypt\sha1-brutforce\bin\Debug\net6.0\sha1-brutforce.exe
+C:\Repos\mark-test\sha1-decrypt\sha1-brutforce\bin\Debug\net6.0\sha1-brutforce.deps.json
+C:\Repos\mark-test\sha1-decrypt\sha1-brutforce\bin\Debug\net6.0\sha1-brutforce.runtimeconfig.json
+C:\Repos\mark-test\sha1-decrypt\sha1-brutforce\bin\Debug\net6.0\sha1-brutforce.dll
+C:\Repos\mark-test\sha1-decrypt\sha1-brutforce\bin\Debug\net6.0\sha1-brutforce.pdb
+C:\Repos\mark-test\sha1-decrypt\sha1-brutforce\obj\Debug\net6.0\sha1-brutforce.csproj.AssemblyReference.cache
+C:\Repos\mark-test\sha1-decrypt\sha1-brutforce\obj\Debug\net6.0\sha1-brutforce.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\mark-test\sha1-decrypt\sha1-brutforce\obj\Debug\net6.0\sha1-brutforce.AssemblyInfoInputs.cache
+C:\Repos\mark-test\sha1-decrypt\sha1-brutforce\obj\Debug\net6.0\sha1-brutforce.AssemblyInfo.cs
+C:\Repos\mark-test\sha1-decrypt\sha1-brutforce\obj\Debug\net6.0\sha1-brutforce.csproj.CoreCompileInputs.cache
+C:\Repos\mark-test\sha1-decrypt\sha1-brutforce\obj\Debug\net6.0\sha1-brutforce.dll
+C:\Repos\mark-test\sha1-decrypt\sha1-brutforce\obj\Debug\net6.0\refint\sha1-brutforce.dll
+C:\Repos\mark-test\sha1-decrypt\sha1-brutforce\obj\Debug\net6.0\sha1-brutforce.pdb
+C:\Repos\mark-test\sha1-decrypt\sha1-brutforce\obj\Debug\net6.0\sha1-brutforce.genruntimeconfig.cache
+C:\Repos\mark-test\sha1-decrypt\sha1-brutforce\obj\Debug\net6.0\ref\sha1-brutforce.dll
