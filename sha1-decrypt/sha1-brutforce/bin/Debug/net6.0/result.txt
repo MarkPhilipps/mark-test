@@ -1,0 +1,2 @@
+Password found: G321
+ Elapsed Milliseconds: 6598

@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\sha1-decrypt"
+    "\\sha1-decrypt",
+    "\\sha1-decrypt\\sha1-brutforce"
   ],
-  "SelectedNode": "\\sha1-decrypt",
+  "SelectedNode": "\\sha1-decrypt\\sha1-brutforce\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
