@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\CodeRepos\\mark-test\\sha1-decrypt\\sha1-brutforce\\sha1-brutforce.csproj": {}
+    "C:\\Repos\\mark-test\\sha1-decrypt\\sha1-brutforce\\sha1-brutforce.csproj": {}
   },
   "projects": {
-    "D:\\CodeRepos\\mark-test\\sha1-decrypt\\sha1-brutforce\\sha1-brutforce.csproj": {
+    "C:\\Repos\\mark-test\\sha1-decrypt\\sha1-brutforce\\sha1-brutforce.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\CodeRepos\\mark-test\\sha1-decrypt\\sha1-brutforce\\sha1-brutforce.csproj",
+        "projectUniqueName": "C:\\Repos\\mark-test\\sha1-decrypt\\sha1-brutforce\\sha1-brutforce.csproj",
         "projectName": "sha1-brutforce",
-        "projectPath": "D:\\CodeRepos\\mark-test\\sha1-decrypt\\sha1-brutforce\\sha1-brutforce.csproj",
+        "projectPath": "C:\\Repos\\mark-test\\sha1-decrypt\\sha1-brutforce\\sha1-brutforce.csproj",
         "packagesPath": "C:\\Users\\mhphi\\.nuget\\packages\\",
-        "outputPath": "D:\\CodeRepos\\mark-test\\sha1-decrypt\\sha1-brutforce\\obj\\",
+        "outputPath": "C:\\Repos\\mark-test\\sha1-decrypt\\sha1-brutforce\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mhphi\\AppData\\Roaming\\NuGet\\NuGet.Config",

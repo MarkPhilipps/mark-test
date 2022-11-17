@@ -1,2 +1,2 @@
 Password found: aaaaaaaaaa
- Elapsed Milliseconds: 82
+ Elapsed Milliseconds: 36
