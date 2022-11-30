@@ -12,11 +12,11 @@ namespace sha1_brutforce
         static string password = "";
         static void Main(string[] args)
         {
-            int workerCount = 16;
+            int workerCount = 12;
 
             var possibleChars = getPossibleChars();
             var hash = getSearchedHash();
-            var charCountPerWorker = getCharCountPerWorker(workerCount);
+            var charCountPerWorker = 5;
             
 
             var watch = new System.Diagnostics.Stopwatch();
@@ -25,7 +25,8 @@ namespace sha1_brutforce
             Task[] workers = getWorkers(workerCount, charCountPerWorker, hash, possibleChars);
             Task.WaitAll(workers);
             watch.Stop();
-            Console.WriteLine("Done! Benötigte Zeit {0}ms.", watch.ElapsedMilliseconds);
+            double timeSpent = watch.ElapsedMilliseconds / 1000;
+            Console.WriteLine("Done! Benötigte Zeit {0} Sekunden.", timeSpent);
             if (found)
             {
                 printResultToFile(watch.ElapsedMilliseconds);
@@ -36,41 +37,19 @@ namespace sha1_brutforce
         private static List<Char> getPossibleChars()
         {
             List<char> possibleChars = new List<char>() {
-                'a', 'q', 'G', 'W', 
-                'b', 'r', 'H', 'X', 
-                'c', 's', 'I', 'Y',
-                'd', 't', 'J', 'Z',
-                'e', 'u', 'K', '0',
-                'f', 'v', 'L', '1',
-                'g', 'w', 'M', '2',
-                'h', 'x', 'N', '3',
-                'i', 'y', 'O', '4',
-                'j', 'z', 'P', '5',
-                'k', 'A', 'Q', '6',
-                'l', 'B', 'R', '7',
-                'm', 'C', 'S', '8',
-                'n', 'D', 'T', '9',
-                'o', 'E', 'U',
-                'p', 'F', 'V'
+                '0', '1', '2', '3', '4',
+                '5', '6', '7', '8', '9',
+                'a', 'b', 'c', 'd', 'e',
+                'f', 'g', 'h', 'i', 'j',
+                'k', 'l', 'm', 'n', 'o',
+                'p', 'q', 'r', 's', 't',
+                'u', 'v', 'w', 'x', 'y',
+                'z', 'A', 'B', 'C', 'D',
+                'E', 'F', 'G', 'H', 'I',
+                'J', 'K', 'L', 'M', 'N',
+                'O', 'P', 'Q', 'R', 'S', 'T',
+                'U', 'V', 'W', 'X', 'Y', 'Z'
             };
-            /*List<char> possibleChars = new List<char>() {
-                '0', '1', '2', '3',
-                '4', '5', '6', '7',
-                '8', '9', 'a', 'b',
-                'c', 'd', 'e', 'f',
-                'g', 'h', 'i', 'j',
-                'k', 'l', 'm', 'n',
-                'o', 'p', 'q', 'r',
-                's', 't', 'u', 'v',
-                'w', 'x', 'y', 'z',
-                'A', 'B', 'C', 'D',
-                'E', 'F', 'G', 'H',
-                'I', 'J', 'K', 'L',
-                'M', 'N', 'O', 'P',
-                'Q', 'R', 'S', 'T',
-                'U', 'V', 'W', 'X',
-                'Y', 'Z'
-            };*/
             return possibleChars;
         }
         private static String getSearchedHash()
@@ -84,47 +63,35 @@ namespace sha1_brutforce
 
             string hashaaaaaaaaaa = "3495ff69d34671d1e15b33a63c1379fdedd3a32a";
 
-            return hash2;
-        }
-        private static int getCharCountPerWorker(int workerCount)
-        {
-            return 4;
+            return hash1;
         }
         private static Task[] getWorkers (int workerCount, int charCountPerWorker, string searchedHash, List<Char> possibleChars)
         {
             Task[] workers = new Task[workerCount];
-            Task task0 = Task.Factory.StartNew(() => doStuff(0, 3, searchedHash, possibleChars));
+            Task task0 = Task.Factory.StartNew(() => doStuff(0, 4, searchedHash, possibleChars));
             workers[0] = task0;
-            Task task1 = Task.Factory.StartNew(() => doStuff(4, 7, searchedHash, possibleChars));
+            Task task1 = Task.Factory.StartNew(() => doStuff(5, 9, searchedHash, possibleChars));
             workers[1] = task1;
-            Task task2 = Task.Factory.StartNew(() => doStuff(8, 11, searchedHash, possibleChars));
+            Task task2 = Task.Factory.StartNew(() => doStuff(10, 14, searchedHash, possibleChars));
             workers[2] = task2;
-            Task task3 = Task.Factory.StartNew(() => doStuff(12, 15, searchedHash, possibleChars));
+            Task task3 = Task.Factory.StartNew(() => doStuff(15, 19, searchedHash, possibleChars));
             workers[3] = task3;
-            Task task4 = Task.Factory.StartNew(() => doStuff(16, 19, searchedHash, possibleChars));
+            Task task4 = Task.Factory.StartNew(() => doStuff(20, 24, searchedHash, possibleChars));
             workers[4] = task4;
-            Task task5 = Task.Factory.StartNew(() => doStuff(20, 23, searchedHash, possibleChars));
+            Task task5 = Task.Factory.StartNew(() => doStuff(25, 29, searchedHash, possibleChars));
             workers[5] = task5;
-            Task task6 = Task.Factory.StartNew(() => doStuff(24, 27, searchedHash, possibleChars));
+            Task task6 = Task.Factory.StartNew(() => doStuff(30, 34, searchedHash, possibleChars));
             workers[6] = task6;
-            Task task7 = Task.Factory.StartNew(() => doStuff(28, 31, searchedHash, possibleChars));
+            Task task7 = Task.Factory.StartNew(() => doStuff(35, 39, searchedHash, possibleChars));
             workers[7] = task7;
-            Task task8 = Task.Factory.StartNew(() => doStuff(32, 35, searchedHash, possibleChars));
+            Task task8 = Task.Factory.StartNew(() => doStuff(40, 44, searchedHash, possibleChars));
             workers[8] = task8;
-            Task task9 = Task.Factory.StartNew(() => doStuff(36, 39, searchedHash, possibleChars));
+            Task task9 = Task.Factory.StartNew(() => doStuff(45, 49, searchedHash, possibleChars));
             workers[9] = task9;
-            Task task10 = Task.Factory.StartNew(() => doStuff(40, 43, searchedHash, possibleChars));
+            Task task10 = Task.Factory.StartNew(() => doStuff(50, 55, searchedHash, possibleChars));
             workers[10] = task10;
-            Task task11 = Task.Factory.StartNew(() => doStuff(44, 47, searchedHash, possibleChars));
+            Task task11 = Task.Factory.StartNew(() => doStuff(56, 61, searchedHash, possibleChars));
             workers[11] = task11;
-            Task task12 = Task.Factory.StartNew(() => doStuff(48, 51, searchedHash, possibleChars));
-            workers[12] = task12;
-            Task task13 = Task.Factory.StartNew(() => doStuff(52, 55, searchedHash, possibleChars));
-            workers[13] = task13;
-            Task task14 = Task.Factory.StartNew(() => doStuff(56, 58, searchedHash, possibleChars));
-            workers[14] = task14;
-            Task task15 = Task.Factory.StartNew(() => doStuff(59, 61, searchedHash, possibleChars));
-            workers[15] = task15;
             return workers;
         }
         private static void printResultToFile(long msElapsed)
@@ -134,7 +101,7 @@ namespace sha1_brutforce
         }
         private static void doStuff(int startIndex, int endIndex, string shahash, List<char> possibleChars)
         {
-            brut10(startIndex, endIndex, shahash, possibleChars);
+            brut5(startIndex, endIndex, shahash, possibleChars);
         }
         private static void brut5(int startIndex, int endIndex, string shahash, List<char> possibleChars)
         {
@@ -142,6 +109,8 @@ namespace sha1_brutforce
             {
                 for (int i = startIndex; i <= endIndex; i++)
                 {
+                    if (found)
+                        break;
                     Console.WriteLine("Worker started to work with passwords with letter {0}",possibleChars[i]);
                     
                     if (found)
