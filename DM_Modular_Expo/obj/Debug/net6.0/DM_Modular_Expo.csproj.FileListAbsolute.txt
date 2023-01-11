@@ -1,0 +1,15 @@
+C:\Repos\DM_Modular_Expo\bin\Debug\net6.0\DM_Modular_Expo.exe
+C:\Repos\DM_Modular_Expo\bin\Debug\net6.0\DM_Modular_Expo.deps.json
+C:\Repos\DM_Modular_Expo\bin\Debug\net6.0\DM_Modular_Expo.runtimeconfig.json
+C:\Repos\DM_Modular_Expo\bin\Debug\net6.0\DM_Modular_Expo.dll
+C:\Repos\DM_Modular_Expo\bin\Debug\net6.0\DM_Modular_Expo.pdb
+C:\Repos\DM_Modular_Expo\obj\Debug\net6.0\DM_Modular_Expo.csproj.AssemblyReference.cache
+C:\Repos\DM_Modular_Expo\obj\Debug\net6.0\DM_Modular_Expo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Repos\DM_Modular_Expo\obj\Debug\net6.0\DM_Modular_Expo.AssemblyInfoInputs.cache
+C:\Repos\DM_Modular_Expo\obj\Debug\net6.0\DM_Modular_Expo.AssemblyInfo.cs
+C:\Repos\DM_Modular_Expo\obj\Debug\net6.0\DM_Modular_Expo.csproj.CoreCompileInputs.cache
+C:\Repos\DM_Modular_Expo\obj\Debug\net6.0\DM_Modular_Expo.dll
+C:\Repos\DM_Modular_Expo\obj\Debug\net6.0\refint\DM_Modular_Expo.dll
+C:\Repos\DM_Modular_Expo\obj\Debug\net6.0\DM_Modular_Expo.pdb
+C:\Repos\DM_Modular_Expo\obj\Debug\net6.0\DM_Modular_Expo.genruntimeconfig.cache
+C:\Repos\DM_Modular_Expo\obj\Debug\net6.0\ref\DM_Modular_Expo.dll

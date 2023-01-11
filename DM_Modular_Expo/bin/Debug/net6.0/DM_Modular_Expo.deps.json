@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "DM_Modular_Expo/1.0.0": {
+        "runtime": {
+          "DM_Modular_Expo.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DM_Modular_Expo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
